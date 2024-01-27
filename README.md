@@ -7,4 +7,8 @@ I have found two ways in going about this:
 
 1) Including a "type" : "module" designation, and then additionally "start": "node express0.js" within the "scripts" identifier of the package.json file allowed me to run "express0.js" without needing to alter the filename.
 
-2) If not wanting to alter the package.json file, running "express0.js" as "express0.mjs" allowed the program to proceed and the server to run successfully. Otherwise, importing express caused errors to occur, citing issues with importing modules from outside. 
+  "node express0.js" would successfully run the code with these alterations.
+
+3) If not wanting to alter the package.json file, running "express0.js" as "express0.mjs" allowed the program to proceed and the server to run successfully. Otherwise, importing express caused errors to occur, citing issues with importing modules from outside.
+
+   "node express0.mjs" would successfully run the code with these alterations.
